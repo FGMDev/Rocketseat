@@ -1,0 +1,46 @@
+body {
+  text-align: center;
+  padding: 25%;
+  padding-top: 60px;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+img.icon {
+  border-radius: 100%;
+  border-color: cornflowerblue;
+  border-style: double;
+  border-width: 10px;
+}
+div.user {
+  padding: 1px;
+}
+div.button {
+  border-style: solid;
+  border-radius: 8px;
+  border-color: cornflowerblue;
+}
+p.nick {
+  color: rgb(100, 149, 237);
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-bottom: 30px;
+}
+p.link {
+  color: cornflowerblue;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+b {
+  font-size: 22px;
+}
+div.socials {
+  padding: 10px;
+  padding-top: 30px;
+}
+img.socials {
+  width: 30px;
+  padding: 20px;
+}
