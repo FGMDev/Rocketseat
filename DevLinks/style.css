@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* background-image: url(./media/bg-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; */
+  background: url(./media/bg-mobile.jpg) no-repeat top center/cover;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+body * {
+  font-family: "Inter", serif;
+  color: white;
+}
+div.container {
+  width: 360px;
+  border: 1px solid red;
+  margin-right: auto;
+  margin: auto;
+  padding-top: 56px;
+}
+div.profile {
+  text-align: center;
+  padding: 24px;
+}
+div.profile img {
+  border-radius: 100%;
+  border-style: solid;
+  border-color: aquamarine;
+  width: 112px;
+}
+.profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+/* links */
+
+ul {
+  list-style: none;
+  gap: 8px;
+}
+
+ul li {
+  height: 56px;
+  border: solid rgba(221, 160, 221, 0.308) 2px;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding-top: 14px;
+}
+
+a {
+  text-decoration: none;
+}
