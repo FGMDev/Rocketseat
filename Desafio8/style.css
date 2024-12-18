@@ -1,0 +1,26 @@
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+}
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #22212c;
+  color: #837e9f;
+}
+aside.user {
+  padding: 25px;
+  height: 100%;
+  width: 600px;
+  background-color: #302f3d;
+  display: flex;
+}
+img.userimg {
+  border-radius: 100%;
+  border-style: solid;
+  border-color: aquamarine;
+}
+p.username {
+  text-align: center;
+}
