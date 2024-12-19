@@ -11,6 +11,34 @@
   --switch-bg-url: url(media/moon-star.svg);
 }
 
+.switch {
+  border: 1px solid red;
+  position: relative;
+}
+
+.switch button {
+  height: 32px;
+  width: 32px;
+  border: 0;
+  border-radius: 50%;
+  background: white var(--switch-bg-url) no-repeat;
+
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--text-color-transparent);
+  border: var(--text-color);
+  backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
 .light {
   --text-color: rgb(0, 0, 0);
   --text-color-transparent: rgba(0, 0, 0, 0.1);
@@ -53,6 +81,7 @@ div.profile img {
 /* links */
 
 ul {
+  margin-top: 20px;
   list-style: none;
 
   display: flex;
@@ -110,12 +139,4 @@ div.sociallinks a:hover {
 }
 footer {
   padding: 24px 0;
-}
-
-.switch button {
-  height: 32px;
-  width: 32px;
-  border: 0;
-  border-radius: 50%;
-  background: white var(--switch-bg-url) no-repeat;
 }
