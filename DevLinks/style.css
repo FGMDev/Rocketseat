@@ -3,17 +3,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --text-color: white;
+  --text-color-transparent: rgba(255, 255, 255, 0.1);
+  --br-url: url(media/bg-mobile.jpg);
+  --switch-bg-url: url(media/moon-star.svg);
+}
+
+.light {
+  --text-color: rgb(0, 0, 0);
+  --text-color-transparent: rgba(0, 0, 0, 0.1);
+  --bg-url: url(media/bg-mobile-light.jpg);
+  --switch-br-utl: url(media/sun.svg);
+}
+
 html {
-  /* background-image: url(./media/bg-desktop.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover; */
-  background: url(./media/bg-mobile.jpg) no-repeat top center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 body * {
   font-family: "Inter", serif;
-  color: white;
+  color: var(--text-color);
   padding: 0 25;
 }
 div.container {
@@ -51,7 +62,7 @@ ul {
 
 ul li {
   height: 56px;
-  border: solid rgba(255, 255, 255, 0.5) 2px;
+  border: solid var(--text-color-transparent) 2px;
   border-radius: 8px;
   padding-top: 14px;
   backdrop-filter: blur(4px);
@@ -61,18 +72,18 @@ ul li {
 
 ul li:hover {
   height: 56px;
-  border: solid rgba(255, 255, 255, 1) 2px;
+  border: solid var(--text-color) 2px;
 }
 
 a {
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--text-color-transparent);
   border-radius: 8px;
   transition: background 0.2s;
 }
 
 a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--text-color-transparent);
 }
 
 div.sociallinks {
@@ -93,7 +104,18 @@ div.sociallinks a {
 }
 
 div.sociallinks a:hover {
-  background-color: rgb(255, 255, 255, 0.2);
+  background-color: var(--text-color-transparent);
   border-radius: 50%;
   padding: 16px;
+}
+footer {
+  padding: 24px 0;
+}
+
+.switch button {
+  height: 32px;
+  width: 32px;
+  border: 0;
+  border-radius: 50%;
+  background: white var(--switch-bg-url) no-repeat;
 }
