@@ -7,13 +7,23 @@
 :root {
   --text-color: white;
   --text-color-transparent: rgba(255, 255, 255, 0.1);
-  --br-url: url(media/bg-mobile.jpg);
+  --bg-url: url(media/bg-mobile.jpg);
   --switch-bg-url: url(media/moon-star.svg);
 }
 
+.light {
+  --text-color: rgb(0, 0, 0);
+  --text-color-transparent: rgba(0, 0, 0, 0.1);
+  --bg-url: url(media/bg-mobile-light.jpg);
+  --switch-bg-url: url(media/sun.svg);
+}
+
 .switch {
-  border: 1px solid red;
   position: relative;
+  width: 64px;
+
+  display: block;
+  margin: 4px auto;
 }
 
 .switch button {
@@ -21,12 +31,18 @@
   width: 32px;
   border: 0;
   border-radius: 50%;
-  background: white var(--switch-bg-url) no-repeat;
+  background: white var(--switch-bg-url) no-repeat center;
 
   position: absolute;
   z-index: 1;
-  top: 0;
+  transform: translateY(-50%);
+  top: 50%;
   left: 0;
+}
+
+.light .switch button {
+  right: 0;
+  left: initial;
 }
 
 .switch span {
@@ -37,13 +53,7 @@
   border: var(--text-color);
   backdrop-filter: blur(4px);
   border-radius: 9999px;
-}
-
-.light {
-  --text-color: rgb(0, 0, 0);
-  --text-color-transparent: rgba(0, 0, 0, 0.1);
-  --bg-url: url(media/bg-mobile-light.jpg);
-  --switch-br-utl: url(media/sun.svg);
+  border: 2px solid var(--text-color-transparent);
 }
 
 html {
