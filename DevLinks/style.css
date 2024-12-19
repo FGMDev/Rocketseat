@@ -14,17 +14,17 @@ html {
 body * {
   font-family: "Inter", serif;
   color: white;
+  padding: 0 25;
 }
 div.container {
   width: 360px;
-  border: 1px solid red;
   margin-right: auto;
   margin: auto;
   padding-top: 56px;
 }
 div.profile {
   text-align: center;
-  padding: 24px;
+  padding: 25px;
 }
 div.profile img {
   border-radius: 100%;
@@ -71,6 +71,14 @@ a {
   transition: background 0.2s;
 }
 
-a:hover{
+a:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+div.sociallinks {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  font-size: 24px;
+  gap: 16px;
 }
